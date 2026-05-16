@@ -1,0 +1,30 @@
+﻿{
+  "name": "@brx-projects/brx-codex-cli",
+  "version": "0.1.0",
+  "description": "BRX + Codex CLI orchestration with autonomy profiles, prompt optimization, and skill routing.",
+  "type": "module",
+  "bin": {
+    "brx-codex": "bin/brx-codex.mjs"
+  },
+  "files": [
+    "bin",
+    "config",
+    "README.md"
+  ],
+  "scripts": {
+    "doctor": "node bin/brx-codex.mjs doctor",
+    "start": "node bin/brx-codex.mjs",
+    "test:dry": "node bin/brx-codex.mjs run --profile semi --task \"teste rapido\" --dry-run"
+  },
+  "keywords": [
+    "brx",
+    "codex",
+    "cli",
+    "agent",
+    "automation"
+  ],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
+}

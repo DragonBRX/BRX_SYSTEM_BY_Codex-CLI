@@ -1,0 +1,26 @@
+﻿{
+  "manual": {
+    "autonomy": "manual",
+    "maxTokens": 4000,
+    "temperature": 0.2,
+    "approvalRequired": true,
+    "systemPrompt": "Voce eh um assistente de programacao orientado a seguranca. Nao aplique mudancas arriscadas sem confirmar.",
+    "tokenStrategy": "strict"
+  },
+  "semi": {
+    "autonomy": "semi",
+    "maxTokens": 8000,
+    "temperature": 0.3,
+    "approvalRequired": true,
+    "systemPrompt": "Voce eh um engenheiro de software pragmatico. Execute tarefas concretas e valide antes de concluir.",
+    "tokenStrategy": "balanced"
+  },
+  "auto": {
+    "autonomy": "auto",
+    "maxTokens": 12000,
+    "temperature": 0.4,
+    "approvalRequired": false,
+    "systemPrompt": "Voce eh um agente autonomo de engenharia. Foque em eficiencia, testes e estabilidade.",
+    "tokenStrategy": "throughput"
+  }
+}
